@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Calculation of Truncated Cone</title>
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+    <script src="../assest/js/cono.js"></script>
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+    <div class="container_todos">
+      <h2>WEIGHT CALCULATION OF TRUNCATED CONE</h2>
+      <div class="inputs">
+        <label for="alto">Height</label>
+        <input
+          type="number"
+          id="alto"
+          step="any"
+          name="alto"
+          placeholder="Enter height in meters"
+          required
+        />
+        <div id="altoError" class="error-message"></div>
+        <label for="diametro_superior">Upper Diameter</label>
+        <input
+          type="number"
+          id="diametro_superior"
+          step="any"
+          name="diametro_superior"
+          placeholder="Enter upper diameter in meters"
+          required
+        />
+        <div id="diametro_superiorError" class="error-message"></div>
+        <label for="diametro_inferior">Lower Diameter</label>
+        <input
+          type="number"
+          id="diametro_inferior"
+          step="any"
+          name="diametro_inferior"
+          placeholder="Enter lower diameter in meters"
+          required
+        />
+        <div id="diametro_inferiorError" class="error-message"></div>
+        <label for="peso_material">Specific Weight of Material</label>
+        <input
+          type="number"
+          id="peso_material"
+          step="any"
+          name="peso_material"
+          placeholder="Enter specific weight in tons per cubic meter"
+          required
+        />
+        <div id="peso_materialError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calculoCono()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Weight:
+          <span id="cono"></span>
+        </p>
+      </div>
+    </div>
+    <div id="procesoCono" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img src="../assest/img/cono.png" alt="image of cone" />
+    </div>
+  </body>
+</html>

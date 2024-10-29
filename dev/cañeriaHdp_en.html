@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HDP Pipe</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>UNITS OF MEASUREMENT AND WEIGHT</h2>
+      <br />
+      <div class="inputs">
+        <label for="unidadesOrigen">Select source unit:</label>
+        <select id="unidadesOrigen" title="Source unit">
+          <option value="milimetros">Millimeters</option>
+          <option value="centimetros">Centimeters</option>
+          <option value="metros">Meters</option>
+          <option value="pies">Feet</option>
+          <option value="pulgadas">Inches</option>
+          <option value="libras">Pounds</option>
+          <option value="kilogramos">Kilograms</option>
+        </select>
+        <br />
+        <label for="valor">Enter the value to convert:</label>
+        <input
+          type="number"
+          id="valor"
+          name="valor"
+          placeholder="Enter the value"
+          step="any"
+          required
+          title="Value to convert"
+        />
+        <div id="valorError" class="error-message"></div>
+        <br />
+        <label for="unidadesDestino">Select target unit:</label>
+        <select id="unidadesDestino" title="Target unit">
+          <option value="metros">Meters</option>
+          <option value="milimetros">Millimeters</option>
+          <option value="centimetros">Centimeters</option>
+          <option value="pies">Feet</option>
+          <option value="libras">Pounds</option>
+          <option value="pulgadas">Inches</option>
+          <option value="kilogramos">Kilograms</option>
+          <option value="toneladas">Tons</option>
+        </select>
+        <br />
+        <label for="resultado">Result:</label>
+        <input type="text" id="resultado" readonly title="Result" />
+      </div>
+
+      <button class="enviar" onclick="convertirUnidades()">
+        <span class="span">Convert</span>
+      </button>
+    </div>
+
+    <div class="container_todos">
+      <h2>HDP PIPE:</h2>
+      <div class="inputs">
+        <label for="diametro">Diameter</label>
+        <input
+          type="number"
+          id="diametro"
+          placeholder="Enter value in mm"
+          name="diametro"
+          required
+        />
+        <div id="diametroError" class="error-message"></div>
+
+        <label for="espesor">Thickness</label>
+        <input
+          type="number"
+          id="espesor"
+          placeholder="Enter value in mm"
+          name="espesor"
+          required
+        />
+        <div id="espesorError" class="error-message"></div>
+
+        <label for="largo">Length</label>
+        <input
+          type="number"
+          id="largo"
+          placeholder="Enter value in mm"
+          name="largo"
+          required
+        />
+        <div id="largoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calculoCañeriaHdp()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Weight:
+          <span id="cañeriaHdp"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoHdp" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/cañeria_hdp-transformed.png"
+        alt="mounting ear image"
+      />
+    </div>
+
+    <script src="../assest/js/unidadesMasaYPeso.js"></script>
+    <script src="../assest/js/cañeriaHdp.js"></script>
+  </body>
+</html>

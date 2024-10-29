@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Square Perimeter Calculation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/principal_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>SQUARE PERIMETER CALCULATION</h2>
+      <div class="inputs">
+        <label for="lado">Enter the length of one side</label>
+        <input
+          type="number"
+          id="lado"
+          name="lado"
+          step="any"
+          placeholder="Enter the side length"
+          required
+        />
+        <div id="ladoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calcularPerimetro()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Perimeter:
+          <span id="resultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img src="../assest/img/PerimetroCuadrado.png" alt="square perimeter" />
+    </div>
+
+    <script src="../assest/js/perimetroCuadrado.js"></script>
+  </body>
+</html>

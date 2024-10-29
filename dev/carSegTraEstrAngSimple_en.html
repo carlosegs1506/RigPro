@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Safe Load for Single Angled Basket Sling</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>SLING CAPACITY BASED ON DIAMETER</h2>
+      <div class="inputs">
+        <label for="capacidad">Enter Inches</label>
+        <input
+          type="text"
+          id="capacidad"
+          step="any"
+          name="capacidad"
+          placeholder="Enter inches + fraction"
+          required
+        />
+        <div id="capacidadError" class="error-message"></div>
+
+        <label for="amarre">Sling Type</label>
+        <select id="amarre">
+          <option value="axial">Axial</option>
+          <option value="loop">Loop</option>
+          <option value="basket">Basket</option>
+        </select>
+      </div>
+      <button class="enviar" onclick="calcularCapacidad()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Capacity:
+          <span id="resultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <div class="container_todos">
+      <h2>SAFE LOAD FOR SINGLE ANGLED BASKET SLING</h2>
+      <div class="inputs">
+        <form id="slings-form">
+          <label for="angulada">Axial Capacity:</label>
+          <input
+            type="number"
+            id="angulada"
+            step="any"
+            name="angulada"
+            placeholder="Enter capacity"
+            required
+          />
+          <div id="anguladaError" class="error-message"></div>
+
+          <label for="altura">Height:</label>
+          <input
+            type="number"
+            id="altura"
+            step="any"
+            name="altura"
+            placeholder="Enter height"
+            required
+          />
+          <div id="alturaError" class="error-message"></div>
+
+          <label for="largo">Length:</label>
+          <input
+            type="number"
+            id="largo"
+            step="any"
+            name="largo"
+            placeholder="Enter length"
+            required
+          />
+          <div id="largoError" class="error-message"></div>
+        </form>
+      </div>
+      <button class="enviar" onclick="capacidadSeguraVerticalAngulada()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Safe Load:
+          <span id="capacidadSeguraEstroboAnguladaSimple"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoSimple" class="proceso"></div>
+
+    <script src="../assest/js/capEstrobos.js"></script>
+    <script src="../assest/js/carSegTraEstrAngSimple.js"></script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+    <title>Chain Capacity</title>
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>3- AND 4-LEG CHAIN CAPACITY</h2>
+
+      <div class="inputs">
+        <label for="cargaMaxima"
+          >Maximum Working Load (per sling in vertical):</label
+        >
+        <input
+          type="number"
+          id="cargaMaxima"
+          name="cargaMaxima"
+          placeholder="Enter maximum load"
+        />
+        <div id="cargaError" class="error-message"></div>
+
+        <label for="altura">Height:</label>
+        <input
+          type="number"
+          id="altura"
+          name="altura"
+          placeholder="Enter height"
+        />
+        <div id="alturaError" class="error-message"></div>
+
+        <label for="largo">Leg Length:</label>
+        <input
+          type="number"
+          id="largo"
+          name="largo"
+          placeholder="Enter leg length"
+        />
+        <div id="largoError" class="error-message"></div>
+
+        <label for="eslingas">Number of Slings:</label>
+        <select id="eslingas">
+          <option value="3">3 Slings</option>
+          <option value="4">4 Slings</option>
+        </select>
+      </div>
+
+      <button class="enviar" onclick="calcularCapacidad()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Capacity:
+          <span id="result"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoCadenas" class="proceso"></div>
+    <script src="../assest/js/capacidadCadenaTripleCuatruple.js"></script>
+  </body>
+</html>

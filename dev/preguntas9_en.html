@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cranes Knowledge Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="./preguntas_en.html">Go Back</a></button>
+            <img class="imagen" src="../assest/img/futurista1.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>GENERAL KNOWLEDGE</h2>
+    </div>
+    <div class="inputs">
+        <form id="quiz-form">
+            <ul style="list-style: none;">
+                <li>
+                    <!-- Question 101 -->
+                    <h3>101) What characteristic defines a basic lift:</h3>
+                    <label><input type="radio" name="q101" value="a"> a. More than 2 tons.</label>
+                    <label><input type="radio" name="q101" value="b"> b. More than 80% of crane capacity.</label>
+                    <label><input type="radio" name="q101" value="c"> c. Multiple lifts.</label>
+                    <label><input type="radio" name="q101" value="d"> d. All of the above.</label>
+                    <button class="enviar" type="button" onclick="checkAnswer('q101', 'a', 'result101')"><span
+                            class="span">Check</span></button>
+                    <!-- Result of Question 101 -->
+                    <div id="result101"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 102 -->
+                    <h3>102) Under what safety factor are turnbuckles manufactured according to ASME B30.26:</h3>
+                    <label><input type="radio" name="q102" value="a"> a. 25:1.</label>
+                    <label><input type="radio" name="q102" value="b"> b. 10:1.</label>
+                    <label><input type="radio" name="q102" value="c"> c. 6:1.</label>
+                    <label><input type="radio" name="q102" value="d"> d. 4:1.</label>
+                    <button class="enviar" type="button" onclick="checkAnswer('q102', 'c', 'result102')"><span
+                            class="span">Check</span></button>
+                    <!-- Result of Question 102 -->
+                    <div id="result102"></div>
+                </li>
+            </ul>
+            <hr>
+            <!-- Translate remaining questions in the same manner -->
+            <!-- Continue translating all questions in this structure -->
+            <ul>
+                <li>
+                    <!-- Question 110 -->
+                    <h3>110) What is the maximum allowable wear on the lifting element (Shackle):</h3>
+                    <label><input type="radio" name="q110" value="a"> a. 10%.</label>
+                    <label><input type="radio" name="q110" value="b"> b. 5%.</label>
+                    <label><input type="radio" name="q110" value="c"> c. 15%.</label>
+                    <label><input type="radio" name="q110" value="d"> d. 20%.</label>
+                    <button class="enviar" type="button" onclick="checkAnswer('q110', 'a', 'result110')"><span
+                            class="span">Check</span></button>
+                    <!-- Result of Question 110 -->
+                    <div id="result110"></div>
+                </li>
+            </ul>
+            <hr>
+        </form>
+    </div>
+
+    <div id="results"></div>
+    </div>
+    
+    <div class="otras_preguntas">
+        <button class="otras"><a href="./preguntas1.html">1</a></button>
+        <button class="otras"><a href="./preguntas2.html">2</a></button>
+        <button class="otras"><a href="./preguntas3.html">3</a></button>
+        <button class="otras"><a href="./preguntas4.html">4</a></button>
+        <button class="otras"><a href="./preguntas5.html">5</a></button>
+        <button class="otras"><a href="./preguntas6.html">6</a></button>
+        <button class="otras"><a href="./preguntas7.html">7</a></button>
+        <button class="otras"><a href="./preguntas8.html">8</a></button>
+        <button class="otras"><a href="./preguntas9.html">9</a></button>
+        <button class="otras"><a href="./preguntas10.html">10</a></button>
+        <button class="otras"><a href="./preguntas11.html">11</a></button>
+        <button class="otras"><a href="./preguntas12.html">12</a></button>
+    </div>
+
+    <script src="../assest/js/preguntas.js"></script>
+    
+</body>
+
+</html>

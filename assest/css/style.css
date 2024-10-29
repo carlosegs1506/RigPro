@@ -1,0 +1,1202 @@
+/*Reset styles*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --secondary: #ef0070;
+}
+
+/* Estilos generales */
+body {
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+
+/* Encabezado */
+.principal {
+  align-items: center;
+  display: flex;
+  background-color: hsl(248, 100%, 6%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Imagen del encabezado */
+.principal img {
+  filter: brightness(1.75);
+  width: auto;
+  height: 100%;
+  max-height: 80%;
+}
+
+/* Titulo Principal */
+h1 {
+  font-size: 5vw;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  background-image: linear-gradient(
+    258.75deg,
+    rgb(67, 177, 200) 31.33%,
+    rgb(153, 137, 235) 48.42%,
+    rgb(217, 127, 209) 59.35%,
+    rgb(245, 130, 178) 65.56%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
+  line-height: 1.2;
+  height: auto;
+  flex-grow: 1;
+}
+
+/* Contenedor de contenido */
+.container {
+  align-items: center;
+  background-color: hsl(248, 100%, 6%);
+  border: 4px solid #4832d5;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  justify-content: space-evenly;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.container div {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 40%;
+}
+
+/* Pilas, recien agregado */
+.gancho img {
+  background-color: transparent;
+  height: auto;
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+.container .primero {
+  margin: 10px 0px;
+  width: 100%;
+}
+
+.container .principal{
+  height: 80%;
+  margin: 10px 0px;
+  width: 100%;  
+}
+
+
+.container .principal img{
+  height: 50vh;
+  opacity: 0.9;
+  filter: brightness(80%) contrast(120%) saturate(150%);
+  width: 100%;
+}
+
+/* Agrega la imagen dentro del contenedor .container .primero */
+.container .primero img {
+  background-color: hsl(248, 100%, 6%);
+  height: 40vh;
+  max-height: 30vh; 
+}
+
+/* Ajusta el ancho del botón para que se vea bien con la imagen */
+.container .primero button {
+  width: 90%;
+  margin-top: 0;
+}
+
+/* Botón */
+.button_principal_segundario,
+.container button,
+.enviar,
+.tanden {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Cambiar color de fondo al pasar el mouse */
+.button_principal_segundario:hover,
+.container button:hover,
+.enviar:hover,
+.tanden:hover {
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+/* Texto del botón */
+.button_principal_segundario a,
+.container button a,
+.enviar span,
+.tanden span {
+  color: hsl(0, 0%, 100%);
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vw;
+  text-decoration: none;
+}
+
+/* Texto del botón al pasar el mouse */
+.container button a:hover,
+.enviar span:hover,
+.tanden span:hover {
+  color: var(--secondary);
+}
+
+/* Estilo de los botones en contenedor .primero */
+.container .primero button {
+  width: 90%;
+}
+
+/* Estilo imagen principal */
+.button img {
+  border-radius: 20px;
+}
+
+/* Estilo del botón en .principal */
+.principal button {
+  width: 150px;
+  height: 50px;
+}
+
+.button_principal_segundario,
+.tanden {
+  width: 120px;
+  height: 50px;
+}
+
+/* Texto destacado */
+.primario {
+  background-color: hsl(248, 100%, 6%);
+  bottom: 0px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px;
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.primario h3 {
+  font-size: 4vw;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Pagina principal, segundaria */
+main {
+  border-radius: 10px;
+  background-color: hsl(248, 100%, 6%);
+  margin: 5px auto;
+  padding: 15% 0px;
+  width: 95%;
+}
+
+.ul_principal_segundario {
+  padding: 10px 10px;
+  list-style: none;
+  margin-bottom: 5%;
+}
+
+/* Boton */
+.button_principal_segundario {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.ul_principal_segundario .imagen {
+  height: 60px;
+  top: 30px;
+  position: absolute;
+  right: 20px;
+  width: 60px;
+}
+
+.button_principal_segundario:hover {
+  background-color: hsl(248, 100%, 6%);
+  transition: all 250ms linear;
+}
+
+/* Enlace */
+.button_principal_segundario a {
+  font-size: 18px;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.formulas_mas_usadas_otras {
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 10px;
+  margin: 5px auto;
+  padding: 10px;
+  justify-content: space-around;
+  width: 90%;
+}
+
+/* Button Formulas */
+.formulas_mas_usadas_otras li {
+  align-items: center;
+  background-color: var(--secondary);
+  border-radius: 5px;
+  list-style: none;
+  text-align: center;
+  padding: 8%;
+  width: 120px;
+}
+
+.formulas_mas_usadas_otras a {
+  color: hsl(0, 0%, 100%);
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+/* Estilos de las paginas formulas mas usadas y otras formulas */
+.container_todos {
+  background-color: hsl(248, 100%, 6%);
+  border: 3px solid hsl(262, 53%, 15%);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px auto;
+  width: 95%;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 4vw;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+/* Impust */
+.inputs {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.inputs label {
+  color: hsl(262, 53%, 15%);
+  display: block;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4vw;
+  list-style: none;
+  padding: 5px;
+}
+
+.inputs input {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+select {
+  border-radius: 10px;
+  height: 25px;
+  margin: 10px 10px 10px 10px;
+  padding: 5px 5px 0px 5px;
+  width: 150px;
+}
+
+.descripcion {
+  font-size: 4vw;
+}
+
+.error-message {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 3.5vw;
+  color: #e75c50;
+  padding-top: 5px;
+}
+
+.enviar {
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 0;
+  margin-top: 20px;
+}
+
+.enviar:hover {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid #4832d5;
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.enviar span {
+  color: hsl(0, 0%, 100%);
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+.enviar span:hover {
+  color: var(--secondary);
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result p {
+  font-size: 4vw;
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 10px;
+  color: hsl(0, 0%, 100%);
+}
+
+.result span {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  color: hsl(0, 0%, 100%) !important;
+}
+
+.proceso {
+  background-color: hsl(248, 100%, 6%);
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: 95%;
+}
+
+.proceso h3 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 4vw;
+  color: hsl(0, 0%, 100%);
+}
+
+.proceso p {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.8rem;
+  padding: 3px;
+  color: hsl(0, 0%, 100%);
+}
+
+.imagen-proceso {
+  margin: 5px auto;
+  text-align: center;
+  width: 95%;
+}
+
+.imagen-proceso img {
+  height: 200px;
+  max-width: 95%;
+}
+
+.tanden {
+  background-color: var(--secondary);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  letter-spacing: 0;
+  margin-top: 20px;
+  width: 90%;
+}
+
+.tanden:hover {
+  background-color: hsl(0, 0%, 100%);
+  border: 2px solid #4832d5;
+  color: var(--secondary);
+  cursor: pointer;
+  transition: all 250ms linear;
+}
+
+.tanden span {
+  font-family: "Vollkorn SC", serif;
+  font-size: 4vw;
+  text-decoration: none;
+}
+
+#quiz-form ul {
+  list-style: none;
+}
+
+#quiz-form h3 {
+  color: rgb(44, 43, 43);
+  font-family: "Vollkorn SC", serif;
+  font-style: italic;
+  font-size: 1rem;
+  text-align: justify;
+  margin: 10px 0px;
+}
+
+#quiz-form label {
+  font-family: "Vollkorn SC", serif;
+  color: rgb(44, 43, 43);
+  font-size: 1rem;
+  padding: 7px;
+  text-align: justify;
+}
+
+#quiz-form button {
+  background-color: hsl(248, 100%, 6%);
+  border-radius: 10px;
+  margin: 10px 0px;
+  width: 40%;
+}
+
+#quiz-form span {
+  color: hsl(0, 0%, 100%);
+}
+
+.results {
+  display: inline;
+  padding: 5px;
+}
+
+hr {
+  margin-top: 5px;
+}
+
+.otras_preguntas {
+  display: flex;
+  flex-wrap: wrap;
+  height: 70px;
+  margin-top: 15px;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.otras_preguntas button {
+  background-color: hsl(248, 100%, 6%);
+  border-radius: 5px;
+  height: 30px;
+  width: 60px;
+}
+
+.otras_preguntas a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.contenedor {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px hsl(262, 53%, 15%);
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+  justify-content: center;
+}
+
+.contenedor div {
+  text-align: center;
+  margin: 40px 5px;
+}
+
+.contenedor div a {
+  background-color: hsl(262, 53%, 15%);
+  color: white;
+  display: block;
+  font-family: "Vollkorn SC", serif;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 5px;
+  text-decoration: none;
+  width: 100%;
+  border-radius: 10px;
+}
+
+table {
+  margin: 0px auto;
+  padding-top: 10px;
+}
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 0.07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+#topmenu {
+  display: none;
+}
+
+.table {
+  margin-left: 60px;
+}
+
+#topmenu ul {
+  color: #000;
+  border-bottom: 1px solid #bbbbbb;
+  margin: 12px 0px 0px 0px;
+  padding: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
+#topmenu ul li {
+  display: inline;
+  overflow: hidden;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+#topmenu ul li a,
+#topmenu ul li a:visited {
+  color: #fff;
+  background: #336699;
+  border: 1px solid #336699;
+  padding: 8px 5px 8px 5px;
+  margin: 0;
+  text-decoration: none;
+}
+
+#topmenu ul li a:hover {
+  background: #eee;
+  color: #000;
+}
+
+#topmenu ul #menuon a {
+  color: #000;
+  background: #eee;
+  border: 1px solid #bbbbbb;
+  padding: 8px 5px 8px 5px;
+  margin: 0;
+  text-decoration: none;
+  border-bottom: 2px solid #eee;
+}
+
+#topmenu ul #menuon a:hover {
+  background: #f5f8ec;
+}
+
+.topmenucenter {
+  text-align: center;
+}
+
+#sciout {
+  border-radius: 10px;
+  width: 100%;
+  border: 2px groove rgb(133, 133, 133);
+  padding: 10px;
+}
+
+#sciInPut {
+  font-size: 20px;
+  overflow: hidden;
+  width: 575px;
+}
+
+#sciOutPut {
+  overflow: hidden;
+  background: hsl(248, 100%, 6%);
+  border-radius: 3px;
+  padding: 10px;
+  margin: 0;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: right;
+  width: 100%;
+}
+
+.row {
+  margin-top: 15px;
+}
+
+.scien div {
+  display: flex;
+  margin: 10px 0px 10px 0px;
+  align-items: center;
+}
+
+.scien div span {
+  margin: 5px;
+  width: 20%;
+  height: 35px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  border: 1px solid #a2bbd4;
+  border-radius: 3px;
+  font-family: "Vollkorn SC", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #e5ecf3;
+}
+
+.scien div span:hover {
+  background: #090e40 !important;
+  color: white !important;
+}
+
+.scien div span:focus {
+  box-shadow: inset 5px 5px 3px lightblue, inset -5px 5px 3px white;
+}
+
+#number {
+  margin-top: 20px;
+}
+
+#number div {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0px 10px 0px;
+  justify-content: space-between;
+}
+
+#number div span {
+  margin: 5px;
+  width: 15%;
+  height: 35px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 10px;
+  border: 1px solid #a2bbd4;
+  border-radius: 3px;
+  font-family: "Vollkorn SC", serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  background-color: #e5ecf3;
+}
+
+#number div span:hover {
+  background: #090e40 !important;
+  color: white !important;
+}
+
+#number div .scinm {
+  border: 1px solid #336699 !important;
+  border-radius: 3px !important;
+  font-family: "Vollkorn SC", serif;
+  color: #000 !important;
+  background-color: #aec0d3 !important;
+}
+
+.scien div .scird {
+  width: 140px;
+  background: white;
+}
+
+#scihistory {
+  width: 100%;
+  text-align: right;
+  overflow: hidden;
+}
+
+span .asme {
+  font-style: italic;
+  font-weight: 3rem;
+}
+
+/* General Styles */
+select {
+  font-family: cursive;
+  width: 70%;
+  height: 35px;
+}
+
+/* Estilo base para la respuesta */
+.result-correct {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.result-incorrect {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+ /* Estilos para animaciones */
+ .carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.carousel-item.active {
+  opacity: 1;
+  transform: scale(1.05); /* Efecto de zoom in */
+}
+
+h4, p {
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+h4 {
+  transform: translateY(-10px); /* Movimiento hacia arriba */
+  opacity: 0;
+}
+
+.carousel-item.active h4 {
+  transform: translateY(0); /* Restaura la posición */
+  opacity: 1; /* Hace visible el texto */
+}
+
+p {
+  transform: translateY(10px); /* Movimiento hacia abajo */
+  /* opacity: 0; */
+}
+
+.carousel-item.active p {
+  transform: translateY(0); /* Restaura la posición */
+  opacity: 1; /* Hace visible el texto */
+}
+
+/* Clase activa para mostrar el resultado */
+.show-result {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+@media print {
+  select option {
+    page-break-before: always;
+  }
+}
+
+/* Media Queries for Screen Sizes */
+
+/* Small Screens */
+@media screen and (max-width: 280px) {
+  #sciout {
+    width: 260px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sciInPut,
+  #sciOutPut {
+    width: 254px;
+    overflow: hidden;
+  }
+
+  .table {
+    width: 260px;
+    padding: 0;
+    margin-left: -20px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .formulas_mas_usadas_otras li {
+    padding: 8%;
+    width: 100px;
+  }
+}
+
+@media sreen and (max-width: 320px) {
+  .formulas_mas_usadas_otras {
+    padding: 8%;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #sciout {
+    width: 290px;
+  }
+
+  #sciInPut,
+  #sciOutPut {
+    width: 268px;
+  }
+
+  .table {
+    width: 290px;
+    padding: 0;
+    margin-left: -10px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .table {
+    margin-left: -13px;
+  }
+}
+
+/* Medium Screens */
+@media screen and (max-width: 425px) {
+  #topmenu {
+    display: block;
+  }
+
+  .row {
+    display: block !important;
+  }
+
+  #sciout {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #sciInPut {
+    width: 307px;
+  }
+
+  #sciOutPut {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .principal {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  .container .primero button {
+    width: 70%;
+  }
+}
+
+@media (max-width: 600px) {
+  .principal {
+    padding: 0.4rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 68%;
+  }
+}
+
+/* Large Screens */
+@media screen and (min-width: 1200px) {
+  .principal img {
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 4vw;
+    padding: 0;
+  }
+
+  .container button {
+    height: 100px;
+  }
+
+  .container button a {
+    font-size: 2.5vw;
+  }
+
+  .primario h3 {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (orientation: landscape) {
+  .container button a {
+    font-size: 3vw;
+  }
+}
+
+/* Device-Specific Media Queries */
+
+/* Samsung Galaxy Tab */
+@media (max-width: 800px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 80%;
+  }
+}
+
+/* Samsung Galaxy S Series */
+@media (max-width: 480px) {
+  .principal {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    font-size: 3vw;
+  }
+
+  .container .primero button {
+    width: 70%;
+  }
+}
+
+/* Huawei MediaPad Series */
+@media (max-width: 768px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 75%;
+  }
+}
+
+/* Google Pixel Series */
+@media (max-width: 411px) {
+  .principal {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    font-size: 3.2vw;
+  }
+
+  .container .primero button {
+    width: 65%;
+  }
+}
+
+/* iPhone */
+@media (max-width: 414px) {
+  .principal {
+    padding: 0.3rem;
+  }
+
+  h1 {
+    font-size: 3.2vw;
+  }
+
+  .container .primero button {
+    width: 65%;
+  }
+}
+
+/* iPad */
+@media (max-width: 1024px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 75%;
+  }
+}
+
+/* Xiaomi Mi Series */
+@media (max-width: 600px) {
+  .principal {
+    padding: 0.4rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 68%;
+  }
+}
+
+/* Oppo Find Series */
+@media (max-width: 768px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  .container .primero button {
+    width: 75%;
+  }
+}
+
+/* Motorola Moto Series */
+@media (max-width: 720px) {
+  .principal {
+    padding: 0.4rem;
+  }
+
+  h1 {
+    font-size: 3.5vw;
+  }
+
+  .container .primero button {
+    width: 70%;
+  }
+}
+
+/* Huawei P Series y Mate Series */
+@media (max-width: 768px) {
+  .principal {
+    padding: 0.5rem;
+  }
+
+  .container button a {
+    font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .container .primero button {
+    width: 75%;
+  }
+}
+
+/* Realme X Series */
+@media (max-width: 640px) {
+  .principal {
+    padding: 0.4rem;
+  }
+
+  .container button a {
+    font-size: 3.4vw;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .container .primero button {
+    width: 67%;
+  }
+}
+
+/* Honor V Series */
+@media (max-width: 600px) {
+  .principal {
+    padding: 0.4rem;
+  }
+
+  .container button a {
+    font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 4.5vw;
+  }
+
+  .container .primero button {
+    width: 68%;
+  }
+}
+
+/* carrusel */
+
+.carousel-item {
+  height: 20%;
+  background-color: hsl(248, 100%, 6%);
+  border-radius: 20px;
+}
+
+.carousel-item > p {
+  color: hsl(0, 0%, 100%);
+  padding: 20px;
+  font-family: "Vollkorn SC", serif;
+  font-size: 4vw;
+  text-align: justify;
+  text-indent: 15px;
+}
+
+.carousel-item > h4 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Vollkorn SC", serif;
+}

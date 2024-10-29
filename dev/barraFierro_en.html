@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Iron Bar Calculation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>UNITS OF MEASUREMENT AND WEIGHT</h2>
+      <br />
+      <div class="inputs">
+        <label for="unidadesOrigen">Select the source unit:</label>
+        <select id="unidadesOrigen" title="Source Unit">
+          <option value="milimetros">Millimeters</option>
+          <option value="centimetros">Centimeters</option>
+          <option value="metros">Meters</option>
+          <option value="pies">Feet</option>
+          <option value="pulgadas">Inches</option>
+          <option value="libras">Pounds</option>
+          <option value="kilogramos">Kilograms</option>
+        </select>
+        <br />
+        <label for="valor">Enter the value to convert:</label>
+        <input
+          type="number"
+          id="valor"
+          name="valor"
+          placeholder="Enter the value"
+          step="any"
+          required
+          title="Value to convert"
+        />
+        <div id="valorError" class="error-message"></div>
+        <br />
+        <label for="unidadesDestino">Select the destination unit:</label>
+        <select id="unidadesDestino" title="Destination Unit">
+          <option value="metros">Meters</option>
+          <option value="milimetros">Millimeters</option>
+          <option value="centimetros">Centimeters</option>
+          <option value="pies">Feet</option>
+          <option value="libras">Pounds</option>
+          <option value="pulgadas">Inches</option>
+          <option value="kilogramos">Kilograms</option>
+          <option value="toneladas">Tons</option>
+        </select>
+        <br />
+        <label for="resultado">Result:</label>
+        <input type="text" id="resultado" readonly title="Result" />
+      </div>
+
+      <button class="enviar" onclick="convertirUnidades()">
+        <span class="span">Convert</span>
+      </button>
+    </div>
+
+    <div class="container_todos">
+      <h2>CONSTRUCTION BAR</h2>
+      <div class="inputs">
+        <label for="diametro">Diameter</label>
+        <input
+          type="number"
+          id="diametro"
+          name="diametro"
+          placeholder="Enter diameter in mm"
+          required
+        />
+        <div id="diametroError" class="error-message"></div>
+
+        <label for="largo">Length</label>
+        <input
+          type="number"
+          id="largo"
+          name="largo"
+          placeholder="Enter length in mm"
+          required
+        />
+        <div id="largoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calculoBarraFierro()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Weight:
+          <span id="barraFierro"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoBarra" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/barra_de_fierro-transformed.png"
+        alt="iron bar image"
+      />
+    </div>
+
+    <script src="../assest/js/unidadesMasaYPeso.js"></script>
+    <script src="../assest/js/barraFierro.js"></script>
+  </body>
+</html>

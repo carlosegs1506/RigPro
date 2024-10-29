@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <title>Thick-Walled Tube</title>
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="./segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" alt="logo" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>REINFORCED CONCRETE TUBE</h2>
+      <div class="inputs">
+        <label for="diametro1">Outer Diameter</label>
+        <input
+          type="number"
+          id="diametro1"
+          step="any"
+          name="diametro"
+          placeholder="Enter outer diameter in meters"
+          required
+        />
+        <div id="diametro1Error" class="error-message"></div>
+
+        <label for="diametro2">Inner Diameter</label>
+        <input
+          type="number"
+          id="diametro2"
+          step="any"
+          name="diametro"
+          placeholder="Enter inner diameter in meters"
+          required
+        />
+        <div id="diametro2Error" class="error-message"></div>
+
+        <label for="largo">Length</label>
+        <input
+          type="number"
+          id="largo"
+          step="any"
+          name="largo"
+          placeholder="Enter length in meters"
+          required
+        />
+        <div id="largoError" class="error-message"></div>
+
+        <label for="peso">Specific Weight</label>
+        <input
+          type="number"
+          id="peso"
+          step="any"
+          name="peso"
+          placeholder="Enter material weight in tons"
+          required
+        />
+        <div id="pesoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calcularTuboParedConcreto()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>Weight: <span id="calcularTuboConcreto"></span></p>
+      </div>
+    </div>
+
+    <div id="procesoDesarrollo" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/cilindro pared gruesa.png"
+        alt="thick-walled tube image"
+      />
+    </div>
+
+    <script src="../assest/js/tuboParedGruesa.js"></script>
+  </body>
+</html>

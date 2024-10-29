@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+    <title>Centrifugal Force Calculation</title>
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>CENTRIFUGAL FORCE CALCULATION</h2>
+
+      <div class="inputs">
+        <label for="peso">Load Weight (kg): </label>
+        <input
+          type="number"
+          id="peso"
+          name="peso"
+          placeholder="Enter load weight"
+        />
+        <div id="pesoError" class="error-message"></div>
+
+        <label for="radio">Radius (m): </label>
+        <input
+          type="number"
+          id="radio"
+          name="radio"
+          placeholder="Enter radius"
+        />
+        <div id="radioError" class="error-message"></div>
+
+        <label for="numero">Number of Loads: </label>
+        <input
+          type="number"
+          id="numero"
+          name="numero"
+          placeholder="Enter number of loads"
+        />
+        <div id="numeroError" class="error-message"></div>
+
+        <label for="altura">Height (m): </label>
+        <input
+          type="number"
+          id="altura"
+          name="altura"
+          placeholder="Enter height"
+        />
+        <div id="alturaError" class="error-message"></div>
+      </div>
+
+      <button class="enviar" onclick="calcularCargaLateral()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          <span id="result"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoFuerza" class="proceso"></div>
+    <script src="../assest/js/FuerzaCentrifuga.js"></script>
+  </body>
+</html>

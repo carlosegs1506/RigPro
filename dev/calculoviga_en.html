@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Beam Calculation</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+    <div class="container_todos">
+      <h2>H BEAM</h2>
+      <div class="inputs">
+        <form>
+          <fieldset>
+            <legend>Volume A and B</legend>
+            <label for="largo_ab">Length</label>
+            <input
+              type="number"
+              id="largo_ab"
+              step="0.01"
+              name="length"
+              placeholder="Enter length in mm"
+              required
+            />
+            <div id="largo_abError" class="error-message"></div>
+            <label for="ancho_ab">Width</label>
+            <input
+              type="number"
+              id="ancho_ab"
+              step="0.01"
+              name="width"
+              placeholder="Enter width in mm"
+              required
+            />
+            <div id="ancho_abError" class="error-message"></div>
+            <label for="espesor_ab">Thickness</label>
+            <input
+              type="number"
+              id="espesor_ab"
+              step="0.01"
+              name="thickness"
+              placeholder="Enter thickness in mm"
+              required
+            />
+            <div id="espesor_abError" class="error-message"></div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Volume C</legend>
+            <label for="largo_c">Length</label>
+            <input
+              type="number"
+              id="largo_c"
+              step="0.01"
+              name="length"
+              placeholder="Enter length in mm"
+              required
+            />
+            <div id="largo_cError" class="error-message"></div>
+            <label for="ancho_c">Width</label>
+            <input
+              type="number"
+              id="ancho_c"
+              step="0.01"
+              name="width"
+              placeholder="Enter width in mm"
+              required
+            />
+            <div id="ancho_cError" class="error-message"></div>
+            <label for="espesor_c">Thickness</label>
+            <input
+              type="number"
+              id="espesor_c"
+              step="0.01"
+              name="thickness"
+              placeholder="Enter thickness in mm"
+              required
+            />
+            <div id="espesor_cError" class="error-message"></div>
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Specific Weight</legend>
+            <label for="peso_especifico">Specific Weight</label>
+            <input
+              type="number"
+              id="peso_especifico"
+              step="0.01"
+              name="specific_weight"
+              placeholder="Enter specific weight in T/m³"
+              required
+            />
+            <div id="peso_especificoError" class="error-message"></div>
+          </fieldset>
+        </form>
+      </div>
+      <button class="enviar" onclick="calcularVolumenViga()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>Weight: <span id="vigaH"></span></p>
+      </div>
+    </div>
+    <div id="procesoViga" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/viga_h-transformed.png"
+        alt="mounting ear image"
+      />
+    </div>
+    <script src="../assest/js/calculoviga.js"></script>
+  </body>
+</html>

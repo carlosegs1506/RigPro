@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sling Tension Displaced CG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>SLING TENSION DISPLACED CG</h2>
+      <div class="inputs">
+        <label for="peso">Weight</label>
+        <input
+          type="number"
+          id="peso"
+          name="weight"
+          step="any"
+          placeholder="Enter weight"
+          required
+        />
+        <div id="pesoError" class="error-message"></div>
+
+        <label for="altura">Height</label>
+        <input
+          type="number"
+          id="altura"
+          name="height"
+          step="any"
+          placeholder="Enter height"
+          required
+        />
+        <div id="alturaError" class="error-message"></div>
+
+        <label for="dif1">Difference 1: Existing radius on the left side</label>
+        <input
+          type="number"
+          id="dif1"
+          name="dif1"
+          step="any"
+          placeholder="Enter difference 1"
+          required
+        />
+        <div id="dif1Error" class="error-message"></div>
+
+        <label for="dif2"
+          >Difference 2: Existing radius on the right side</label
+        >
+        <input
+          type="number"
+          id="dif2"
+          name="dif2"
+          step="any"
+          placeholder="Enter difference 2"
+          required
+        />
+        <div id="dif2Error" class="error-message"></div>
+
+        <label for="largo1">Sling Length 1</label>
+        <input
+          type="number"
+          id="largo1"
+          name="length1"
+          step="any"
+          placeholder="Enter length 1"
+          required
+        />
+        <div id="largo1Error" class="error-message"></div>
+
+        <label for="largo2">Sling Length 2</label>
+        <input
+          type="number"
+          id="largo2"
+          name="length2"
+          step="any"
+          placeholder="Enter length 2"
+          required
+        />
+        <div id="largo2Error" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calcularTensionCentroMovido()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Tension 1:
+          <span id="tensionMovida1"></span>
+        </p>
+        <p>
+          Tension 2:
+          <span id="tensionMovida2"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoMovido" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/tension de eslinga cg desplazado anguada.png"
+        alt="working height image"
+      />
+    </div>
+
+    <script src="../assest/js/calTenEslCgDesplazado.js"></script>
+  </body>
+</html>

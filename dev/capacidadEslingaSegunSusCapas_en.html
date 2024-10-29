@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sling Capacity Based on Layers</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="../dev/principal_en.html">Go Back</a></button>
+            <img class="imagen" src="../assest/img/futurista1.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>SLING CAPACITY BASED ON LAYERS</h2>
+        <div class="inputs">
+            <label for="color">Select Sling Color</label>
+            <select id="color">
+                <option value="violeta">Violet (1 inch)</option>
+                <option value="verde">Green (2 inches)</option>
+                <option value="amarillo">Yellow (3 inches)</option>
+                <option value="gris">Gray (4 inches)</option>
+                <option value="rojo">Red (5 inches)</option>
+                <option value="cafe">Brown (6 inches)</option>
+                <option value="azul">Blue (8 inches)</option>
+                <option value="naranja_10">Orange (10 inches)</option>
+                <option value="naranja_12">Orange (12 inches)</option>
+            </select>
+            <label for="capas">Select Number of Layers</label>
+            <select id="capas">
+                <option value="1">1 layer</option>
+                <option value="2">2 layers</option>
+                <option value="3">3 layers</option>
+                <option value="4">4 layers</option>
+            </select>
+            <label for="amarre">Type of Hitch</label>
+            <select id="amarre">
+                <option value="axial">Axial</option>
+                <option value="lazo">Choker</option>
+                <option value="canasta">Basket</option>
+            </select>
+
+        </div>
+
+        <button class="enviar" onclick="calcularCapacidad()"><span class="span">Calculate</span></button>
+        <div class="result">
+            <p>Capacity:
+                <span id="resultado"></span>
+            </p>
+        </div>
+
+        <script src="../assest/js/capacidadEslingasSegunSusCapas.js"></script>
+</body>
+
+</html>

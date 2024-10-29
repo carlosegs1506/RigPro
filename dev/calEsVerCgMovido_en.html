@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sling Tension 90° Shifted CG</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>SLING TENSION 90° SHIFTED CG</h2>
+      <div class="inputs">
+        <label for="peso_carga">Load</label>
+        <input
+          type="number"
+          id="peso_carga"
+          name="peso_carga"
+          step="any"
+          placeholder="Enter weight"
+          required
+        />
+        <div id="peso_cargaError" class="error-message"></div>
+
+        <label for="diferencia_1"
+          >Difference 1: Existing radius on the left side of the load</label
+        >
+        <input
+          type="number"
+          id="diferencia_1"
+          step="any"
+          name="difference_1"
+          placeholder="Enter difference 1"
+          required
+        />
+        <div id="diferenca_1Error" class="error-message"></div>
+
+        <label for="diferencia_2"
+          >Difference 2: Existing radius on the right side of the load</label
+        >
+        <input
+          type="number"
+          id="diferencia_2"
+          step="any"
+          name="difference_2"
+          placeholder="Enter difference 2"
+          required
+        />
+        <div id="diferencia_2Error" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calculoVerticalMovido()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Tension 1:
+          <span id="tensionVertical1"></span>
+        </p>
+        <p>
+          Tension 2:
+          <span id="tensionVertical2"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoMovido" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/tension_eslinga_90ý_cg_movido-transformed.png"
+        alt="working height image"
+      />
+    </div>
+
+    <script src="../assest/js/calEslVerCgMovido.js"></script>
+  </body>
+</html>

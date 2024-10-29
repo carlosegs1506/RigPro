@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Grade 8 and 10 Chain Capacity</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/principal_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>GRADE 8 AND 10 CHAIN STRENGTH</h2>
+      <div class="inputs">
+        <label for="milimetro">Millimeters</label>
+        <input
+          type="number"
+          id="milimetro"
+          step="any"
+          placeholder="Enter milimeters"
+          name="milimetro"
+          required
+        />
+        <div id="milimetroError" class="error-message"></div>
+
+        <label for="grado">Grade</label>
+        <select id="grado" name="grado" title="Select the chain grade">
+          <option value="8">8</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <button class="enviar" onclick="calculoCadena()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Strength:
+          <span id="resistenciaCadena"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoCadenas" class="proceso"></div>
+
+    <script src="../assest/js/capCadenas.js"></script>
+  </body>
+</html>

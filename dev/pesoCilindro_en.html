@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cylinder Weight</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>CYLINDER WEIGHT</h2>
+      <div class="inputs">
+        <label for="radio">Radius</label>
+        <input
+          type="number"
+          id="radio"
+          step="any"
+          name="radio"
+          placeholder="Enter radius"
+          required
+        />
+        <div id="radioError" class="error-message"></div>
+
+        <label for="longitud">Length</label>
+        <input
+          type="number"
+          id="longitud"
+          step="any"
+          name="longitud"
+          placeholder="Enter length"
+          required
+        />
+        <div id="longitudError" class="error-message"></div>
+
+        <label for="peso">Material Specific Weight</label>
+        <input
+          type="number"
+          id="peso"
+          step="any"
+          name="peso"
+          placeholder="Enter specific weight"
+          required
+        />
+        <div id="pesoError" class="error-message"></div>
+      </div>
+
+      <button class="enviar" onclick="calcularCilindro()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Weight:
+          <span id="calcularC"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoDesarrollo" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/cilindro_1-transformed.png"
+        alt="cylinder image"
+      />
+    </div>
+
+    <script src="../assest/js/pesoCilindro.js"></script>
+  </body>
+</html>

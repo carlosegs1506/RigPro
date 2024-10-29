@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pressure</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="./segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>PRESSURE CALCULATION</h2>
+      <div class="inputs">
+        <label for="fuerza">Force</label>
+        <input
+          type="number"
+          id="fuerza"
+          step="any"
+          placeholder="Enter force (Hydraulic cylinder pressure)"
+          name="fuerza"
+          required
+        />
+        <div id="fuerzaError" class="error-message"></div>
+
+        <label for="ancho">Width</label>
+        <input
+          type="number"
+          id="ancho"
+          step="any"
+          placeholder="Enter width"
+          name="ancho"
+          required
+        />
+        <div id="anchoError" class="error-message"></div>
+
+        <label for="alto">Height</label>
+        <input
+          type="number"
+          id="alto"
+          step="any"
+          placeholder="Enter height"
+          name="alto"
+          required
+        />
+        <div id="altoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calculoPresion()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Pressure:
+          <span id="resultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoPresion" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img src="../assest/img/presion.png" alt="mounting lug image" />
+    </div>
+
+    <script src="../assest/js/presion.js"></script>
+  </body>
+</html>

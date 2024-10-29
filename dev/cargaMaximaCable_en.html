@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Maximum Working Load for Steel Cables</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="../dev/principal_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>MAXIMUM WORKING LOAD FOR STEEL CABLES</h2>
+      <div class="inputs">
+        <label for="esfuerzo">Breaking Strength</label>
+        <input
+          type="number"
+          id="esfuerzo"
+          step="any"
+          placeholder="Enter value"
+          name="esfuerzo"
+          required
+        />
+        <div id="esfuerzoError" class="error-message"></div>
+
+        <label for="factor">Safety Factor</label>
+        <input
+          type="number"
+          id="factor"
+          step="any"
+          placeholder="Enter value"
+          name="factor"
+          required
+        />
+        <div id="factorError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="cargaMaxima()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>Maximum Load: <span id="resultado"></span></p>
+      </div>
+    </div>
+
+    <div id="procesoCarga" class="proceso"></div>
+
+    <script src="../assest/js/cargaMaximaCable.js"></script>
+  </body>
+</html>

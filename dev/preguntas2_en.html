@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Crane Knowledge Test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assest/css/style.css">
+
+</head>
+
+<body>
+
+    <ul class="ul_principal_segundario">
+        <li>
+            <button class="button_principal_segundario"><a href="./preguntas_en.html">Go Back</a></button>
+            <img class="imagen" src="../assest/img/futurista1.png">
+        </li>
+    </ul>
+
+    <div class="container_todos">
+        <h2>GENERAL KNOWLEDGE</h2>
+    </div>
+    <div class="inputs">
+        <form id="quiz-form">
+            <ul style="list-style: none;">
+                <li>
+                    <!-- Question 21 -->
+                    <h3>21) What will be the tension of slings for a maneuver with unequal arms, load weight 16 tons, sling length 1: 6.88 mts, sling 2: 9.13 mts, height: 5.2 mts, difference 1: 4.5 mts, difference 2: 7.5 mts:</h3>
+                    <label><input type="radio" name="q21" value="a"> a. Tension 1 = 13.2 tons, Tension 2 = 10.5 tons.</label>
+                    <label><input type="radio" name="q21" value="b"> b. Tension 1 = 11.1 tons, Tension 2 = 9.5 tons.</label>
+                    <label><input type="radio" name="q21" value="c"> c. Tension 1 = 14.5 tons, Tension 2 = 7.5 tons.</label>
+                    <label><input type="radio" name="q21" value="d"> d. None of the above.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q21', 'a', 'result21')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 21 -->
+                    <div id="result21"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 22 -->
+                    <h3>22) What will be the maximum capacity in % and Tons for the following angles 73°, 62°, 51°, 37°, for a U-hooking with a 5-meter sling with a capacity of 3900 kg:</h3>
+                    <label><input type="radio" name="q22" value="a"> a. 191%-7,459Kg, 176%-6,886Kg, 155%-6,061Kg, 120%-4,694Kg.</label>
+                    <label><input type="radio" name="q22" value="b"> b. 167%-6,466Kg, 155%-7,886Kg, 156%-4,061Kg, 130%-2,694Kg.</label>
+                    <label><input type="radio" name="q22" value="c"> c. 137%-6,466Kg, 123%-3,886Kg, 176%-1,061Kg, 150%-7,694Kg.</label>
+                    <label><input type="radio" name="q22" value="d"> d. 157%-9,466Kg, 153%-6,886Kg, 186%-3,061Kg, 140%-7,694Kg.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q22', 'a', 'result22')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 22 -->
+                    <div id="result22"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 23 -->
+                    <h3>23) When using a choked hitch (slip), the capacity is reduced by a percentage of:</h3>
+                    <label><input type="radio" name="q23" value="a"> a. 10 to 25%.</label>
+                    <label><input type="radio" name="q23" value="b"> b. 50 to 55%.</label>
+                    <label><input type="radio" name="q23" value="c"> c. 30 to 35%.</label>
+                    <label><input type="radio" name="q23" value="d"> d. 20 to 25%.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q23', 'd', 'result23')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 23 -->
+                    <div id="result23"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 24 -->
+                    <h3>24) What do the initials (WLL) mean:</h3>
+                    <label><input type="radio" name="q24" value="a"> a. Working load limit.</label>
+                    <label><input type="radio" name="q24" value="b"> b. Safe working load.</label>
+                    <label><input type="radio" name="q24" value="c"> c. Breaking load limit.</label>
+                    <label><input type="radio" name="q24" value="d"> d. Safe load limit.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q24', 'a', 'result24')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 24 -->
+                    <div id="result24"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 25 -->
+                    <h3>25) What do the initials (SWL) mean:</h3>
+                    <label><input type="radio" name="q25" value="a"> a. Safe working load.</label>
+                    <label><input type="radio" name="q25" value="b"> b. Exceeding load.</label>
+                    <label><input type="radio" name="q25" value="c"> c. Working load limit.</label>
+                    <label><input type="radio" name="q25" value="d"> d. No side load.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q25', 'a', 'result25')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 25 -->
+                    <div id="result25"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 26 -->
+                    <h3>26) What do the initials FD or FS mean, and what is their application on lifting accessories:</h3>
+                    <label><input type="radio" name="q26" value="a"> a. Safety factor, and it is the theoretical reserve capacity.</label>
+                    <label><input type="radio" name="q26" value="b"> b. Design factor, and it is the theoretical reserve capacity the element or accessory can work with.</label>
+                    <label><input type="radio" name="q26" value="c"> c. Simple force, and it is the breaking capacity of the lifting element or accessory.</label>
+                    <label><input type="radio" name="q26" value="d"> d. None of the above.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q26', 'b', 'result26')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 26 -->
+                    <div id="result26"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 27 -->
+                    <h3>27) The working or operating angle is:</h3>
+                    <label><input type="radio" name="q27" value="a"> a. The angle formed by the boom elevation relative to the chassis.</label>
+                    <label><input type="radio" name="q27" value="b"> b. The angle formed by the ground horizontal and the boom elevation.</label>
+                    <label><input type="radio" name="q27" value="c"> c. The angle formed by the boom elevation and the ground horizontal.</label>
+                    <label><input type="radio" name="q27" value="d"> d. None of the above.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q27', 'a', 'result27')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 27 -->
+                    <div id="result27"></div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <!-- Question 28 -->
+                    <h3>28) What is the working or operating radius:</h3>
+                    <label><input type="radio" name="q28" value="a"> a. The space required for the crane to rotate completely.</label>
+                    <label><input type="radio" name="q28" value="b"> b. The horizontal distance measured between the crane's center of rotation and the vertical axis of the load's center of gravity or the lifting hook.</label>
+                    <label><input type="radio" name="q28" value="c"> c. The vertical distance between the crane's support level and the lifting device.</label>
+                    <label><input type="radio" name="q28" value="d"> d. None of the above.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q28', 'b', 'result28')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 28 -->
+                    <div id="result28"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 29 -->
+                    <h3>29) What is a lay:</h3>
+                    <label><input type="radio" name="q29" value="a"> a. The number of turns that a wire makes in one inch of the strand.</label>
+                    <label><input type="radio" name="q29" value="b"> b. The characteristic configuration of strand winding for use in lifting equipment.</label>
+                    <label><input type="radio" name="q29" value="c"> c. The distance that measures the pitch of a strand around the core of a cable.</label>
+                    <label><input type="radio" name="q29" value="d"> d. Length and angle of twist of wires that form a strand of a cable sling.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q29', 'c', 'result29')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 29 -->
+                    <div id="result29"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 30 -->
+                    <h3>30) Which ASME standard refers to the frequency of inspection of lifting accessories:</h3>
+                    <label><input type="radio" name="q30" value="a"> a. B30.10.</label>
+                    <label><input type="radio" name="q30" value="b"> b. B30.5.</label>
+                    <label><input type="radio" name="q30" value="c"> c. B30.9.</label>
+                    <label><input type="radio" name="q30" value="d"> d. B30.26.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q30', 'd', 'result30')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 30 -->
+                    <div id="result30"></div>
+                </li>
+            </ul>
+            <hr>
+            <ul>
+                <li>
+                    <!-- Question 31 -->
+                    <h3>31) Which ASME standard refers to the visual inspection performed by the user to determine damage before each use or shift when using a synthetic, wire, or chain sling:</h3>
+                    <label><input type="radio" name="q31" value="a"> a. B30.10.</label>
+                    <label><input type="radio" name="q31" value="b"> b. B30.5.</label>
+                    <label><input type="radio" name="q31" value="c"> c. B30.9.</label>
+                    <label><input type="radio" name="q31" value="d"> d. B30.26.</label>
+                    <button class="enviar" type="button" onclick="verificarRespuesta('q31', 'c', 'result31')"><span class="span">Verify</span></button>
+                    <!-- Result for Question 31 -->
+                    <div id="result31"></div>
+                </li>
+            </ul>            
+        </form>
+    </div>
+
+    <div id="results"></div>
+</div>
+
+<div class="otras_preguntas">
+    <button class="otras"><a href="./preguntas1.html">1</a></button>
+    <button class="otras"><a href="./preguntas2.html">2</a></button>
+    <button class="otras"><a href="./preguntas3.html">3</a></button>
+    <button class="otras"><a href="./preguntas4.html">4</a></button>
+    <button class="otras"><a href="./preguntas5.html">5</a></button>
+    <button class="otras"><a href="./preguntas6.html">6</a></button>
+    <button class="otras"><a href="./preguntas7.html">7</a></button>
+    <button class="otras"><a href="./preguntas8.html">8</a></button>
+    <button class="otras"><a href="./preguntas9.html">9</a></button>
+    <button class="otras"><a href="./preguntas10.html">10</a></button>
+    <button class="otras"><a href="./preguntas11.html">11</a></button>
+    <button class="otras"><a href="./preguntas12.html">12</a></button>
+</div>
+
+<script src="../assest/js/preguntas.js"></script>
+
+</body>
+
+</html>

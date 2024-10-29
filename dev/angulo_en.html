@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Working Angle</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="./principal_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>WORKING ANGLE</h2>
+      <div class="inputs">
+        <label for="radio">Radius</label>
+        <input
+          type="number"
+          id="radio"
+          step="any"
+          placeholder="Enter radius"
+          name="radio"
+          required
+        />
+        <div id="radioError" class="error-message"></div>
+
+        <label for="largo">Length</label>
+        <input
+          type="number"
+          id="largo"
+          step="any"
+          placeholder="Enter length"
+          name="largo"
+          required
+        />
+        <div id="largoError" class="error-message"></div>
+      </div>
+      <button class="enviar">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Angle:
+          <span id="resultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="proceso" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img
+        src="../assest/img/angulo_de_trabajo-transformed.png"
+        alt="working height image"
+      />
+    </div>
+
+    <script src="../assest/js/angulo.js" defer></script>
+  </body>
+</html>

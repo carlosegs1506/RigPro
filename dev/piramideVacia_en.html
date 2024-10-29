@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculation of Volume and Weight of a Hollow Pyramid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="../assest/img/futurista1.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assest/css/style.css" />
+  </head>
+
+  <body>
+    <ul class="ul_principal_segundario">
+      <li>
+        <button class="button_principal_segundario">
+          <a href="./segundario_en.html">Go Back</a>
+        </button>
+        <img class="imagen" src="../assest/img/futurista1.png" />
+      </li>
+    </ul>
+
+    <div class="container_todos">
+      <h2>CALCULATION OF VOLUME AND WEIGHT OF A HOLLOW PYRAMID</h2>
+      <div class="inputs">
+        <label for="alturaA">Enter Height A (mm)</label>
+        <input
+          type="number"
+          id="alturaA"
+          name="alturaA"
+          step="any"
+          placeholder="Enter Height A"
+          required
+        />
+        <div id="alturaAError" class="error-message"></div>
+
+        <label for="alturaB">Enter Height B (mm)</label>
+        <input
+          type="number"
+          id="alturaB"
+          name="alturaB"
+          step="any"
+          placeholder="Enter Height B"
+          required
+        />
+        <div id="alturaBError" class="error-message"></div>
+
+        <label for="ancho">Enter Width (mm)</label>
+        <input
+          type="number"
+          id="ancho"
+          name="ancho"
+          step="any"
+          placeholder="Enter Width"
+          required
+        />
+        <div id="anchoError" class="error-message"></div>
+
+        <label for="largo">Enter Length (mm)</label>
+        <input
+          type="number"
+          id="largo"
+          name="largo"
+          step="any"
+          placeholder="Enter Length"
+          required
+        />
+        <div id="largoError" class="error-message"></div>
+
+        <label for="espesor">Enter Thickness (mm)</label>
+        <input
+          type="number"
+          id="espesor"
+          name="espesor"
+          step="any"
+          placeholder="Enter Thickness"
+          required
+        />
+        <div id="espesorError" class="error-message"></div>
+
+        <label for="pesoEspecifico">Enter Specific Weight (kg/m³)</label>
+        <input
+          type="number"
+          id="pesoEspecifico"
+          name="pesoEspecifico"
+          step="any"
+          placeholder="Enter weight without points"
+          required
+        />
+        <div id="pesoEspecificoError" class="error-message"></div>
+      </div>
+      <button class="enviar" onclick="calcularVolumenYPeso()">
+        <span class="span">Calculate</span>
+      </button>
+      <div class="result">
+        <p>
+          Volume:
+          <span id="volumenResultado"></span>
+        </p>
+        <p>
+          Weight:
+          <span id="pesoResultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <div id="procesoPiramide" class="proceso"></div>
+    <div id="imagenProceso" class="imagen-proceso" style="display: none">
+      <img src="../assest/img/PiramideVacia.png" alt="hollow pyramid image" />
+    </div>
+
+    <script src="../assest/js/piramideVacia.js"></script>
+  </body>
+</html>
