@@ -101,7 +101,7 @@ h1 {
 
 
 .container .principal img{
-  height: 50vh;
+  height: 70vh;
   opacity: 0.9;
   filter: brightness(80%) contrast(120%) saturate(150%);
   width: 100%;
@@ -292,7 +292,7 @@ main {
   border-radius: 10px;
   text-align: center;
   padding: 20px;
-  margin: 20px auto;
+  margin: 15px auto;
   width: 95%;
 }
 
@@ -326,14 +326,6 @@ h2 {
 .inputs input {
   border-radius: 10px;
   padding: 10px;
-}
-
-select {
-  border-radius: 10px;
-  height: 25px;
-  margin: 10px 10px 10px 10px;
-  padding: 5px 5px 0px 5px;
-  width: 150px;
 }
 
 .descripcion {
@@ -746,9 +738,12 @@ span .asme {
 
 /* General Styles */
 select {
-  font-family: cursive;
-  width: 70%;
+  border-radius: 10px;
   height: 35px;
+  font-family: cursive;
+  font-size: 1.2rem;
+  margin: 10px 10px 10px 10px;
+  width: 70%;
 }
 
 /* Estilo base para la respuesta */
@@ -1189,14 +1184,14 @@ p {
   color: hsl(0, 0%, 100%);
   padding: 20px;
   font-family: "Vollkorn SC", serif;
-  font-size: 4vw;
+  font-size: 3.5vw;
   text-align: justify;
   text-indent: 15px;
 }
 
 .carousel-item > h4 {
   color: hsl(0, 0%, 100%);
-  margin-top: 10px;
+  margin-top: 20px;
   text-align: center;
   font-family: "Vollkorn SC", serif;
 }
