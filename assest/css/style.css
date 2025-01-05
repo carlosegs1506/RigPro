@@ -70,7 +70,6 @@ h1 {
   padding: 1rem;
   box-sizing: border-box;
   row-gap: 20px;
-  min-height: 80vh;
 }
 
 .container div {
