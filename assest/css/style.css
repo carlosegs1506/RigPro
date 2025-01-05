@@ -70,6 +70,7 @@ h1 {
   padding: 1rem;
   box-sizing: border-box;
   row-gap: 20px;
+  height: 100%;
 }
 
 .container div {
@@ -133,6 +134,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: 'Roboto', sans-serif; /* Ajusta la tipografía al estilo general */
 }
 
